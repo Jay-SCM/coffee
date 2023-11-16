@@ -11,16 +11,6 @@ import DoWhileLoop from './components/DoWhileLoop'; // Import DoWhileLoop compon
 import ForEachLoop from './components/ForEachLoop'; // Import ForEachLoop component
 import WhileLoop from './components/WhileLoop'; // Import WhileLoop component
 import './styles/App.css'; // Import App styles
-// @#@#@#@#  end of imports @#@#@#@#@#
-//     const codeSnippets = {
-//         'for loop': ForLoop,
-//         'while loop': WhileLoop,
-//         'for each loop': ForEachLoop,
-//         'do while loop': DoWhileLoop,
-//     };
-//     const categories = ['for loop', 'while loop', 'for each loop', 'do while loop'];
-//     const SelectedComponent = codeSnippets[selectedCategory];
-//     console.log('Search Term in App:', searchTerm);
 const App = () => {
     const [selectedCategory, setSelectedCategory] = useState('for loop');
     const [searchTerm, setSearchTerm] = useState('');
@@ -30,11 +20,6 @@ const App = () => {
         { title: 'For Each Loop', code: <ForEachLoop /> },
         { title: 'Do While Loop', code: <DoWhileLoop /> },// set of code snippets, pushed to tge card
     ];
-//     const categories = ['for loop', 'while loop', 'for each loop', 'do while loop'];
-//     const filteredCodeSnippets = codeSnippets
-//         .filter((snippet) => snippet.title.toLowerCase().includes(searchTerm.toLowerCase()))
-//         .filter((snippet) => snippet.category === selectedCategory);
-//     console.log('Search Term in App:', searchTerm);
     const categories = ['for loop', 'while loop', 'for each loop', 'do while loop'];
     const filteredCodeSnippets = codeSnippets.filter((snippet) =>
         snippet.title.toLowerCase().includes(searchTerm.toLowerCase()));
