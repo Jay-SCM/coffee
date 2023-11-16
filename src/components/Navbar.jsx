@@ -1,36 +1,61 @@
 
+// // Navbar.jsx
+// import React from 'react';
+// import '../styles/Navbar.css';
+// // const handleSearch = (value) => {
+// //setSearchTerm(value);
+// //onSearch(value); // Propagate the search term to the parent component
+// // };
+// // console.log('Search Term:', searchTerm);
+// // return (
+// const Navbar = () => {
+//     return (
+//         <nav className="navbar">
+//             <a href="/">
+//                 <img
+//                     src="/icon/SylvIcon.jpg"
+//                     alt="Sylv Icon"
+//                     className="icon-image"/>
+//             </a>
+//             <div className="navbar-title">CofeeBAR</div>
+//             {/* Removed the SearchBox component */}
+//             <div className="navbar-links">
+//                 <a href="#">Link 1</a>
+//                 <a href="#">Link 2</a>
+//                 <a href="#">Link 3</a>
+//                 <a href="#">Link 4</a>
+//             </div>
+//         </nav>);};
+// export default Navbar;
+
+
+
+
 // Navbar.jsx
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../styles/Navbar.css';
-// const handleSearch = (value) => {
-//setSearchTerm(value);
-//onSearch(value); // Propagate the search term to the parent component
-// };
-// console.log('Search Term:', searchTerm);
-// return (
+
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <a href="/">
+            <Link to="/">
                 <img
                     src="/icon/SylvIcon.jpg"
                     alt="Sylv Icon"
-                    className="icon-image"/>
-            </a>
+                    className="icon-image"
+                />
+            </Link>
             <div className="navbar-title">CofeeBAR</div>
-            {/* Removed the SearchBox component */}
             <div className="navbar-links">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-                <a href="#">Link 4</a>
+                <Link to="/">Home</Link>
+                <Link to="/new-page">New Page</Link> {/* Add this line for the new page */}
             </div>
-        </nav>);};
+        </nav>
+    );
+};
+
 export default Navbar;
-
-
-
-
 
 
 
