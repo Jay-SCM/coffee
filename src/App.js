@@ -56,14 +56,12 @@
 //   );};
 // export default App;
 
-///////@@@@@@@@@@@@@@@@#################@@@@@@@@@@@@###########@@@@@@@@@@#########
-//
-//
+
 //
 ///////@@@@@@@@@@@@@@@@#################@@@@@@@@@@@@###########@@@@@@@@@@#########
 // App.js
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Note the changes in the import statement
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CodeSnippet from './components/CodeSnippet';
 import SearchBox from './components/SearchBox';
 import Navbar from './components/Navbar';

@@ -49,7 +49,7 @@ const Navbar = () => {
             <div className="navbar-title">CofeeBAR</div>
             <div className="navbar-links">
                 <Link to="/">Home</Link>
-                <Link to="/new-page">New Page</Link> {/* Add this line for the new page */}
+                <Link to="/new-page">New Page</Link>
             </div>
         </nav>
     );
