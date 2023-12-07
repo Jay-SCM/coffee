@@ -1,9 +1,9 @@
-// NewPage.jsx
+// pizza.jsx
 import React from 'react';
 import '../styles/piza.css';
 import '../javascript/pizza.js';
 
-const NewPage = () => {
+const Pizza = () => {
     return (
         <div>
             <h1>New Page Content</h1>
@@ -21,4 +21,4 @@ const NewPage = () => {
     );
 };
 
-export default NewPage;
+export default Pizza;
