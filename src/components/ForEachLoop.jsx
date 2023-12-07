@@ -1,4 +1,4 @@
-// ForEachLoop.jsx
+
 import React from 'react';
 import '../styles/CodeSnippet.css';
 const ForEachLoop = () => {
