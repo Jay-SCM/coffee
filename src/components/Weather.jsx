@@ -3,6 +3,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../styles/weather.css';
 const Weather = () => {
     const [city, setCity] = useState('');
     const [weather, setWeather] = useState(null);
